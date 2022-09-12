@@ -1,8 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+require("@babel/polyfill");
 
 module.exports = {
+  // Where files start
+  entry: ["@babel/polyfill", './src/index.js'],
   // Where files should be sent once they are bundled
   output: {
     path: path.join(__dirname, "/dist"),

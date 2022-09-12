@@ -26,6 +26,7 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "grommet": "^2.25.1",
     "grommet-controls": "^3.0.2",
     "grommet-icons": "^4.7.0",
